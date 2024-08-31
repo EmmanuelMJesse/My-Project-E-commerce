@@ -1,0 +1,86 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #19322E;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0D0D0D;
+}
+
+.shop-name h1 {
+    color: #DFC296;
+    font-size: 28px;
+    margin: 0;
+}
+
+.top-links a {
+    color: #FFFFFF;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.top-links a:hover {
+    color: #DFC296;
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #DFC296;
+}
+
+.faq {
+    margin-bottom: 20px;
+}
+
+.question {
+    background-color: #0D0D0D;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.plus {
+    font-size: 24px;
+    color: #DFC296;
+}
+
+.answer {
+    display: none;
+    padding: 15px;
+    background-color: #19322E;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0D0D0D;
+    color: #DFC296;
+}

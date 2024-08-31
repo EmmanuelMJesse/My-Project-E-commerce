@@ -1,0 +1,153 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+}
+
+.container {
+    flex: 1; /* Flex-grow, making this container take up available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: 100px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    z-index: 1;
+}
+header {
+    position: absolute;
+    top: 0;
+    width: 600px;
+    padding: 20px;
+    background-color: #0f0; /* Green background */
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px; /* Add rounded corners */
+}
+
+
+.form-container {
+    .form-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+    }
+    
+}
+
+.form {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.encouraging-text {
+    color: #fff;
+    right: 50px;
+    position: absolute;
+    top: 50%;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+.input-box label {
+    font-weight: bold;
+    color: #333;
+}
+
+.input-box input,
+.input-box select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #0f0;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-box input::placeholder {
+    color: #aaa;
+}
+
+.gender-box h3 {
+    color: #333;
+}
+
+.gender-option {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gender {
+    display: flex;
+    align-items: center;
+}
+
+.gender input {
+    margin-right: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #0f0;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #080;
+}
+
+.links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.links a {
+    color: #0f0;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+footer {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    position: fixed; /* Ensure the footer stays at the bottom */
+    bottom: 0;
+}
