@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="CSS/customer_regestration.css">
+    <link href="https://fonts.googleapis.com/css2?family=Popins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <header>Registration Form</header>
+        <div class="form-container">
+            <form action="PHP/Customer Regestration.php" method="POST" class="form" id="registration-form">
+                <div class="input-box">
+                    <label>Full Name</label>
+                    <input type="text" name="full_name" placeholder="Enter full name" required>
+                </div>
+                <div class="input-box">
+                    <label>Username</label>
+                    <input type="text" name="username" placeholder="Enter username" required>
+                </div>
+                <div class="input-box">
+                    <label>Phone Number</label>
+                    <div class="phone-container">
+                        <select name="country_code" id="country_code" required>
+                            <option value="+254">Kenya (+254)</option>
+                            <option value="+255">Tanzania (+255)</option>
+                            <option value="+256">Uganda (+256)</option>
+                            <option value="+971">Dubai (+971)</option>
+                            <option value="+1">USA (+1)</option>
+                            <option value="+44">UK (+44)</option>
+                        </select>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter phone number" required>
+                    </div>
+                    <span id="phone-error" class="error-message"></span>
+                </div>
+                <div class="input-box">
+                    <label>Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter password" required>
+                </div>
+                <div class="input-box">
+                    <label>Confirm Password</label>
+                    <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm password" required>
+                    <span id="password-error" class="error-message"></span>
+                </div>
+                <div class="input-box">
+                    <label>Location (Optional)</label>
+                    <input type="text" name="location" placeholder="Enter location">
+                </div>
+                <div class="gender-box">
+                    <h3>Gender (Optional)</h3>
+                    <div class="gender-option">
+                        <div class="gender">
+                            <input type="radio" id="check-male" name="gender" value="Male">
+                            <label for="check-male">Male</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="check-female" name="gender" value="Female">
+                            <label for="check-female">Female</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="check-other" name="gender" value="Other">
+                            <label for="check-other">Other</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label>Preferred Contact Method</label>
+                    <select name="contact_method" required>
+                        <option value="phone">Phone</option>
+                        <option value="email">Email</option>
+                    </select>
+                </div>
+                <button type="submit">Register</button>
+                <div class="links">
+                    <a href="login page.html">Go back to Login Page</a>
+                </div>
+            </form>
+          
+            
+        </div>
+    </section>
+    <video autoplay muted loop id="background-video">
+        <source src="CSS/Play.mp4" type="video/mp4">
+    </video>
+    <!--script src="Java Script/customer_regestration.js"></script-->
+    <footer>
+        &copy; 2024 Nafty Blessed Auto Spares. All rights reserved.
+    </footer>
+</body>
+
+</html>

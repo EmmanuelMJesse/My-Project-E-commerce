@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="CSS/customer dashboard.css">
+  <script defer src="Java Script/customer dashboard.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header>
+    <div class="logo">Nafty Blessed Auto Spares Customer Dashboard</div>
+    <nav>
+      <ul>
+        <li class="dropdown">
+          <a href="login page.html">Account <i class='bx bx-user'></i>
+          <ul class="dropdown-menu">
+            <li><a href="login page.html">Log Out</a></li>
+            <!-- Add more account-related links if needed -->
+          </ul>
+        </li>
+        <li><a href="home page.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="payment.html"><i class='bx bx-cart-alt'></i><span id="cart-count">0</span></a></li>
+        
+        <li><a href="#">Help</a></li>
+        <li class="profile-pic">
+          <img id="profile-image" src="CSS/pexels-markusspiske-2027045.jpg" alt="Profile Image" />
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="account-overview">
+      <div class="account-sidebar">
+        <h3>My Account</h3>
+        <ul>
+          <li><a href="#">Orders</a></li>
+          <li><a href="#" id="inbox-link">Inbox</a></li>
+          <li><a href="#" id="saved-items-link">Saved Items</a></li>
+          <li><a href="#">Account Management</a></li>
+          <li><a href="#">Address Book</a></li>
+          <li><a href="#">Newsletter Preferences</a></li>
+        </ul>
+      </div>
+      <div class="account-content">
+        <div id="inbox" class="account-section">
+          <h3>Inbox</h3>
+          <p>No messages in inbox.</p>
+        </div>
+        <div id="saved-items" class="account-section">
+          <h3>Saved Items</h3>
+          <p>No saved items.</p>
+        </div>
+        <div class="account-section">
+          <h3>Account Details</h3>
+          <form id="addProductForm" action="PHP/customer dashboard.php" method="POST" enctype="multipart/form-data">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" />
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" />
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" placeholder="Enter your phone number" />
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" />
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" placeholder="Enter your address"></textarea>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+              <option value="">Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" />
+            <button type="button" class="edit-button" onclick="updateAccount()">Update Information</button>
+          </form>
+        </div>
+        <div class="account-section">
+          <h3>Payment Methods</h3>
+          <form id="payment-form">
+            <label for="nafty-coins">Nafty Coins:</label>
+            <input type="number" id="nafty-coins" name="nafty-coins" placeholder="Enter Nafty Coins" />
+            <label for="card-number">Visa/MasterCard Number:</label>
+            <input type="text" id="card-number" name="card-number" placeholder="Enter your card number" />
+            <button type="button" class="edit-button" onclick="savePaymentMethods()">Save Payment Methods</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
